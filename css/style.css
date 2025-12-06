@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+body {font-family: 'KyoboHandwriting2019';}
+
+header {width: 100%; height: 80px; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.3); position: absolute; z-index: 20;}
+
+header:hover {height: 100px; transition: 0.3s;}
+
+header .container {display: flex; justify-content: space-between; align-items: center; width: 1400px;} 
+
+header h1 {width: 150px; display: flex; justify-content: center; align-items: center;}
+header h1 a {color: lightskyblue; font-size: 40px;} 
+header nav {}
+header nav .gnb {display: flex;}
+header nav .gnb li {}
+header nav .gnb li a {padding: 10px 50px; display: block; color: #fff; font-size: 24px;}
+
+header nav .gnb li:hover a {color: lightpink; transition: 0.2s;}
+
+header audio {width: 100px;}
+header audio:hover {width: 300px; transition: 0.3s;}
+
+.bgmain {background: url(../images/hero5.jpg); height: 100vh;}
+
+.snow {background: url(../images/snow.png); position: absolute; z-index: 10; height: 100vh; left: 0;top: 0; width: 100%; animation: snow1 10s forwards linear /* 속도 일정하게 */ infinite;
+/* 반복재생 */ background-size: 200px;}
+
+@keyframes snow1 {
+    0% {background-position: 0 0;}
+    100% {background-position: -500px 5000px;}
+}
+
+.snow2 {animation: snow2 5s forwards linear infinite; background-size: 500px;}
+
+@keyframes snow2 {
+    0% {background-position: 0 0;}
+    100% {background-position: -300px 4000px;}
+}
+
+
+.textbox {position: absolute; right: 220px; top: 100px; z-index: 30; display: flex; flex-direction: row-reverse; animation: textAni 3s;}
+
+@keyframes textAni {
+    0% {right: 500px;}
+    100% {right: 220px;}
+}
+
+
+
+
+.textbox li {width: 70px;}
+.textbox li span {position: relative; display: block; color: #fff; font-size: 50px; animation: wordAni 1s forwards; opacity: 0;}
+
+@keyframes wordAni {
+    0% {right: 300px; top: 100px;}
+    100% {right: 0; top: 0; opacity: 1;}
+}
+.textbox li span.mb {margin-bottom: 30px;}
+.textbox li span.t1 {color: lightskyblue;}
+
+
+.textbox li:nth-child(1) span:nth-child(1) {animation-delay: 0;}
+.textbox li:nth-child(1) span:nth-child(2) {animation-delay: 0.1s;}
+.textbox li:nth-child(1) span:nth-child(3) {animation-delay: 0.2s;}
+.textbox li:nth-child(1) span:nth-child(4) {animation-delay: 0.3s;}
+.textbox li:nth-child(1) span:nth-child(5) {animation-delay: 0.4s;}
+.textbox li:nth-child(1) span:nth-child(6) {animation-delay: 0.5s;}
+.textbox li:nth-child(1) span:nth-child(7) {animation-delay: 0.6s;}
+.textbox li:nth-child(1) span:nth-child(8) {animation-delay: 0.7s;}
+.textbox li:nth-child(1) span:nth-child(9) {animation-delay: 0.8s;}
+.textbox li:nth-child(1) span:nth-child(10) {animation-delay: 0.9s;}
+
+.textbox li:nth-child(2) span:nth-child(1) {animation-delay: 0.9s;}
+.textbox li:nth-child(2) span:nth-child(2) {animation-delay: 1s;}
+.textbox li:nth-child(2) span:nth-child(3) {animation-delay: 1.1s;}
+.textbox li:nth-child(2) span:nth-child(4) {animation-delay: 1.2s;}
+.textbox li:nth-child(2) span:nth-child(5) {animation-delay: 1.3s;}
+.textbox li:nth-child(2) span:nth-child(6) {animation-delay: 1.4s;}
+.textbox li:nth-child(2) span:nth-child(7) {animation-delay: 1.5s;}
+.textbox li:nth-child(2) span:nth-child(8) {animation-delay: 1.6s;}
+
